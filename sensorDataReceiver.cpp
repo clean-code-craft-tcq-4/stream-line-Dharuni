@@ -5,8 +5,6 @@
 #include <unistd.h>
 #include "sensorDataReceiver.hpp"
 
-#define MAX_BUFFER_SIZE 1500
-
 using namespace std;
 
 int readDataFromConsole(char readBuffer[])
@@ -19,7 +17,6 @@ int readDataFromConsole(char readBuffer[])
 
 int main()
 {
-
     char readBuffer[MAX_BUFFER_SIZE];
     readDataFromConsole(readBuffer);
     return 0;
